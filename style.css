@@ -1,0 +1,52 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:rgb(210, 206, 201);
+
+}
+.parent{
+    width: 95%;
+    min-height: 700px;
+    display: grid;
+    grid-template-columns: 0.5fr 1.8fr;
+    grid-template-rows: 1fr 3fr;
+    grid-gap: 15px;
+}
+.child{
+    border: 1px rgb(202, 192, 192) solid;
+    background-color: white;
+}
+.image-name{
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+.parent .child:nth-child(1){
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.child .image-class img{
+    width: 400px;
+    height: 300px;
+}
+.items{
+    margin-left: 15px; 
+}
+.main-skills{
+    margin-left: 15px;
+}
+.main-head{
+    padding: 15px;
+}
+.right-head{
+    padding: 10px;
+    margin-left: 10px;
+}
+.main-text{
+    font-size:20px;
+}
